@@ -1,14 +1,31 @@
-<ion-header>
+<ion-header style="text-align: center">
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Welcome Back!</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    
+    <ion-item>
+      <ion-label>Username or email</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>   
+    
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-button shape="round" (click)="navToExplore()">Login</ion-button>
+    </ion-item>
+    
+    <ion-button fill="clear" color="medium" size="small" (click)="navToPasswordReset()">Reset Password</ion-button>
+    
+    <div>
+      <ion-button fill="clear" color="medium" size="small" (click)="navToRegistration()">Register</ion-button>
+    </div>
+    
   </div>
 </ion-content>
